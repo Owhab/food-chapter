@@ -1,8 +1,8 @@
 import React from "react";
-import "./singlemeal.css";
+import "./LunchMeal.css";
 
-const SingleMeal = ({ bmeal }) => {
-  const { image, name, description, price } = bmeal;
+const LunchMeal = ({ lmeal }) => {
+  const { image, name, description, price } = lmeal;
 
   return (
     <div className="text-center">
@@ -14,4 +14,4 @@ const SingleMeal = ({ bmeal }) => {
   );
 };
 
-export default SingleMeal;
+export default LunchMeal;
