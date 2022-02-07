@@ -82,11 +82,18 @@ const Meal = () => {
           <TabPanel value="3">
             <div className="grid gap-3 grid-cols-3">
               {dinnermeal.map((dmeal) => (
-                <DinnerMeal key={dmeal.name} dmeal={dmeal}></DinnerMeal>
+                <DinnerMeal
+                  className=""
+                  key={dmeal.name}
+                  dmeal={dmeal}
+                ></DinnerMeal>
               ))}
             </div>
           </TabPanel>
         </TabContext>
+        <button class="bg-gray-300 hover:bg-gray-400 text-white my-12 py-3 px-12 rounded-r">
+          Checkout Your Food
+        </button>
       </div>
     </div>
   );
