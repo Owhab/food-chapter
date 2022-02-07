@@ -1,36 +1,36 @@
 [
     {
-        "image": "../../../images/Dinner/dinner1.png",
+        "image": "https://i.ibb.co/dLP28vX/dinner6.png",
         "name": "Salmon with Grapefruit and Lentil Salad",
         "description": "How we dream about our future",
         "price": 9.99
     },
     {
-        "image": "../../../images/Dinner/dinner2.png",
+        "image": "https://i.ibb.co/dmyRxbN/dinner5.png",
         "name": "Lemony Salmon Piccata",
         "description": "How we dream about our future",
         "price": 10.99
     },
     {
-        "image": "../../../images/Dinner/dinner2.png",
+        "image": "https://i.ibb.co/zVVkqgy/dinner4.png",
         "name": "Pork Tenderloin with Quinoa Pilaf",
         "description": "How we dream about our future",
         "price": 12.99
     },
     {
-        "image": "../../../images/Dinner/dinner4.png",
+        "image": "https://i.ibb.co/W5nkNMj/dinner3.png",
         "name": "French Fires with cheese",
         "description": "How we dream about our future",
         "price": 8.99
     },
     {
-        "image": "../../../images/Dinner/dinner5.png",
+        "image": "https://i.ibb.co/QC6PgK9/dinner1.png",
         "name": "Gerlik Butter Baked Salmon",
         "description": "How we dream about our future",
         "price": 6.99
     },
     {
-        "image": "../../../images/Dinner/dinner6.png",
+        "image": "https://i.ibb.co/7rJQ8J3/dinner2.png",
         "name": "Baked Chicken",
         "description": "How we dream about our future",
         "price": 9.99

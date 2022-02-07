@@ -8,32 +8,45 @@ import "./Meal.css";
 import { Tabs } from "@mui/material";
 
 import breakfastmeal from "../../../../src/Mealdata/breakfastmeal.json";
-import SingleMeal from "../BreakfastMeal/BreakfastMeal";
 
 import lunchmeal from "../../../Mealdata/lunchmeal.json";
 import BreakfastMeal from "../BreakfastMeal/BreakfastMeal";
 import LunchMeal from "../LunchMeal/LunchMeal";
 
+import dinnermeal from "../../../Mealdata/dinnermeal.json";
+import DinnerMeal from "../DinnerMeal/DinnerMeal";
+
 const Meal = () => {
   const [value, setValue] = useState("1");
   const [breakfastmeals, setBreakfastmeals] = useState({});
   const [lunchmeals, setLunchmeals] = useState({});
+  const [dinnermeals, setDinnermeals] = useState({});
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
 
+  //   Fetch Breakfast Meal using UseEffect
   useEffect(() => {
     fetch(breakfastmeal)
       .then((res) => res.json())
       .then((data) => setBreakfastmeals(data));
   }, []);
 
+  //   Fetch Lunch Meal using UseEffect
   useEffect(() => {
     fetch(lunchmeal)
       .then((res) => res.json())
       .then((data) => setLunchmeals(data));
   }, []);
+
+  //   Fetch Dinner Meal using UseEffect
+  useEffect(() => {
+    fetch(dinnermeal)
+      .then((res) => res.json())
+      .then((data) => setDinnermeals(data));
+  }, []);
+
   return (
     <div>
       <div className="meal-section text-center">
@@ -66,7 +79,13 @@ const Meal = () => {
               ))}
             </div>
           </TabPanel>
-          <TabPanel value="3">Item Three</TabPanel>
+          <TabPanel value="3">
+            <div className="grid gap-3 grid-cols-3">
+              {dinnermeal.map((dmeal) => (
+                <DinnerMeal key={dmeal.name} dmeal={dmeal}></DinnerMeal>
+              ))}
+            </div>
+          </TabPanel>
         </TabContext>
       </div>
     </div>
