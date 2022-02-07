@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,iBAAiB,CAAC;EAChB,OAAO,EAAE,KAAK;EACd,YAAY,EAAE,IAAI;EAClB,WAAW,EAAE,IAAI;CAClB",
+    "sources": [
+        "singlemeal.scss"
+    ],
+    "names": [],
+    "file": "singlemeal.css"
+}

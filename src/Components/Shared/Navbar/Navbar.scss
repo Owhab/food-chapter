@@ -1,0 +1,19 @@
+.menubar {
+  display: flex;
+  justify-content: space-between;
+
+  .brand-logo {
+    height: 40px;
+  }
+
+  .nav-items {
+    display: flex;
+    li {
+      list-style: none;
+      padding: 0 10px;
+    }
+    .login-btn {
+      margin: 0 10px;
+    }
+  }
+}
