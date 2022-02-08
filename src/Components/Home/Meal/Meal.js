@@ -91,7 +91,7 @@ const Meal = () => {
             </div>
           </TabPanel>
         </TabContext>
-        <button class="bg-gray-300 hover:bg-gray-400 text-white my-12 py-3 px-12 rounded-r">
+        <button class="bg-gray-300 hover:bg-gray-400 text-white my-12 py-3 px-12 rounded">
           Checkout Your Food
         </button>
       </div>
