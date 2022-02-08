@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import featuredata from "../../../Mealdata/featuredata.json";
 import Feature from "../Feature/Feature";
+import "./Features.css";
 
 const Features = () => {
   const [featuredatas, setFeatureDatas] = useState({});
@@ -24,7 +25,7 @@ const Features = () => {
           </p>
         </div>
       </div>
-      <div className="flex">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {featuredata.map((fdata) => (
           <Feature key={fdata.title} fdata={fdata}></Feature>
         ))}
