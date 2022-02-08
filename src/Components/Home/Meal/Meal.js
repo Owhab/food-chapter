@@ -66,21 +66,21 @@ const Meal = () => {
             </div>
           </Box>
           <TabPanel className="" value="1">
-            <div className="grid gap-3 grid-cols-3">
+            <div className="grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               {breakfastmeal.map((bmeal) => (
                 <BreakfastMeal key={bmeal.name} bmeal={bmeal}></BreakfastMeal>
               ))}
             </div>
           </TabPanel>
           <TabPanel value="2">
-            <div className="grid gap-3 grid-cols-3 ">
+            <div className="grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               {lunchmeal.map((lmeal) => (
                 <LunchMeal key={lmeal.name} lmeal={lmeal}></LunchMeal>
               ))}
             </div>
           </TabPanel>
           <TabPanel value="3">
-            <div className="grid gap-3 grid-cols-3">
+            <div className="grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               {dinnermeal.map((dmeal) => (
                 <DinnerMeal
                   className=""
